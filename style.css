@@ -65,7 +65,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #1b1b1b;
     margin: 0;
     padding: 0;
 }
@@ -90,18 +90,29 @@ body {
     text-decoration: underline;
 }
 
-h1 {
-    font-size: 36px;
-    color: white;
-    margin-bottom: 10px;
-}
-
 .hero {
     text-align: center;
     color: rgb(255, 255, 255); /* Ensures text is black */
     padding: 60px 20px;
     background-size: cover;
     background-position: center;
+    margin-top: -20px; /* Reduce or remove the top margin */
+}
+
+/* Style for the image */
+.self-portrait {
+    display: block; /* Ensures the image is a block-level element */
+    margin: 20px auto; /* Centers the image horizontally */
+    max-width: 150px; /* Adjusts the width of the image to your preference */
+    border-radius: 50%; /* Makes the image round */
+    border: 3px solid white; /* Optional: adds a white border around the image */
+}
+
+/* Style for the intro section if needed */
+.intro {
+    text-align: center; /* Centers the content */
+    padding: 20px 20px 0; /* Reduced bottom padding */
+    margin-bottom: 0; /* Reduce or remove the bottom margin */
 }
 
 /* Update the paragraph styling within the .hero section */
