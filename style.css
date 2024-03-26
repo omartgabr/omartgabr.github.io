@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-header{
+header {
     width: 100%;
     height: 70vh;
     background-image: url(images/background.png);
@@ -13,12 +13,40 @@ header{
     background-position: center;
 }
 
+.main-nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
 h1 {
     font-size: 36px;
     margin-bottom: 10px;
 }
 
-p {
+.hero {
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+p, .project p, .hero p {
     font-size: 18px;
     line-height: 1.6;
     max-width: 800px;
@@ -38,10 +66,8 @@ a:hover {
     text-decoration: underline;
 }
 
+/******************************* PROJECTS ***********************************/ 
 
-/*******************************PROJECTS***********************************/ 
-
-/* Style the Projects Section */
 #projects {
     background-color: #f9f9f9;
     padding: 20px;
@@ -51,7 +77,6 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style each Project Article */
 .project {
     margin-bottom: 20px;
     padding: 15px;
@@ -80,3 +105,11 @@ a:hover {
     color: #666;
 }
 
+/******************************* FOOTER ***********************************/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+}
