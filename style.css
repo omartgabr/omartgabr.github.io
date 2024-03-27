@@ -18,7 +18,7 @@
 
 /* Button styling */
 .dropdown-button {
-    background-color: #4CAF50; /* Green background */
+    background-color: #000000; /* Green background */
     color: white; /* White text */
     padding: 16px;
     font-size: 16px;
@@ -52,7 +52,7 @@
 
 /* Header top bar styling */
 .header-top {
-    background-color: #09104b; /* Or the color you prefer */
+    background-color: #000000; /* Or the color you prefer */
     color: white;
     display: flex;
     justify-content: space-between; /* Keeps items spread apart */
@@ -65,7 +65,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #1b1b1b;
+    background: linear-gradient(to bottom, #000000 0%, #136ac2 50%, #054280 100%);
     margin: 0;
     padding: 0;
 }
@@ -96,7 +96,7 @@ body {
     padding: 60px 20px;
     background-size: cover;
     background-position: center;
-    margin-top: -20px; /* Reduce or remove the top margin */
+    margin-top: 20px; /* Reduce or remove the top margin */
 }
 
 /* Style for the image */
@@ -113,6 +113,7 @@ body {
     text-align: center; /* Centers the content */
     padding: 20px 20px 0; /* Reduced bottom padding */
     margin-bottom: 0; /* Reduce or remove the bottom margin */
+    position: relative; /* Add position relative */
 }
 
 /* Update the paragraph styling within the .hero section */
@@ -137,10 +138,57 @@ a:hover {
 }
 
 
+/* LINKEDIN + GITHUB BUTTONS */
+.social-buttons {
+    position: absolute;
+    bottom: -70px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.social-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 70%; /* Adjust as needed */
+    background-position: center center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:last-child {
+    margin-right: 0;
+}
+
+.social-button:hover {
+    background-color: #055a8c; /* Darker shade of LinkedIn blue */
+}
+
+.linkedin-button {
+    background-color: #0077B5; /* LinkedIn blue */
+    background-image: url('images/linkedin-logo.png');
+}
+
+.github-button {
+    background-color: #333; /* GitHub gray */
+    background-image: url('images/github-logo.png');
+}
+
+.github-button:hover {
+    background-color: #24292e; /* Darker shade of GitHub gray */
+}
+
+
 /******************************* PROJECTS ***********************************/ 
 
 #projects {
-    background-color: #171f66;
+    background-color: #06294d;
     padding: 20px;
     border: 1px solid #ccc;
     margin-top: 20px;
